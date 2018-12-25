@@ -1,12 +1,15 @@
 {
   "name": "common-modal",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "通用的模态框组件",
   "main": "dist/index.js",
   "scripts": {
     "start": "webpack-dev-server",
     "transpile": "babel src -d dist --copy-files",
-    "prepublishOnly": "npm run transpile"
+    "prepublishOnly": "npm run transpile",
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d examples/dist",
+    "publish-demo": "npm run build && npm run deploy"
   },
   "keywords": [
     "common",
@@ -20,22 +23,23 @@
     "react-dom": "^16.7.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
     "babel-cli": "^7.0.0-0",
     "babel-core": "^7.0.0-0",
     "babel-loader": "^8.0.0-beta.6",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^2.0.2",
+    "gh-pages": "^2.0.1",
     "html-webpack-plugin": "^3.2.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.28.2",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.14",
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
-    "@babel/preset-react": "^7.0.0"
+    "webpack-dev-server": "^3.1.14"
   }
 }
