@@ -1,0 +1,16 @@
+{
+  "name": "common-modal",
+  "version": "1.0.0",
+  "description": "通用的模态框组件",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "keywords": [
+    "common",
+    "modal",
+    "ui"
+  ],
+  "author": "ZoeLeee",
+  "license": "ISC"
+}
