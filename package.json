@@ -16,6 +16,7 @@
     "modal",
     "ui"
   ],
+  "repository":"https://github.com/ZoeLeee/commonModal.git",
   "author": "ZoeLeee",
   "license": "ISC",
   "peerDependencies": {
