@@ -1,3 +1,41 @@
-h1 {
-  color: red;
- }
+ul,div,p,li{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root{
+  width: 100%;
+  height: 100%;
+}
+#container{
+  margin: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#container>ul:first-child{
+  width: 20%;
+}
+#container>ul:nth-child(2){
+  flex:1;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+}
+.selected::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  border:1px solid #99d1ff;
+  background-color: #cce8ff;
+  opacity: 0.3;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}

@@ -1,8 +1,8 @@
 import React from 'react';
 import { render} from 'react-dom';
-import MyComponent from '../../src/index';
+import BaseLayout from '../../src/index';
 
 const App = () => (
- <MyComponent />
+ <BaseLayout />
 );
 render(<App />, document.getElementById("root"));

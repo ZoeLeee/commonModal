@@ -16,7 +16,7 @@
     "modal",
     "ui"
   ],
-  "repository":"https://github.com/ZoeLeee/commonModal.git",
+  "repository": "https://github.com/ZoeLeee/commonModal.git",
   "author": "ZoeLeee",
   "license": "ISC",
   "peerDependencies": {
@@ -26,6 +26,7 @@
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
     "babel-cli": "^7.0.0-0",
@@ -34,6 +35,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^2.0.2",
+    "file-loader": "^4.0.0",
     "gh-pages": "^2.0.1",
     "html-webpack-plugin": "^3.2.0",
     "react": "^16.7.0",
@@ -42,5 +44,8 @@
     "webpack": "^4.28.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
   }
 }
